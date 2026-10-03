@@ -1,0 +1,289 @@
+<title>Politique Kasuku</title>
+<style>
+  :root{
+    --ink:#1A1A2E;
+    --ink-soft:#4A4A5E;
+    --rule:#E4E1D8;
+    --paper:#FBFAF6;
+    --paper-raised:#FFFFFF;
+    --accent:#C0392B;
+    --accent-soft:#F6E4E1;
+    --gold:#D4A04C;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#F2F1EC;
+      --ink-soft:#B8B6AE;
+      --rule:#33333F;
+      --paper:#15151F;
+      --paper-raised:#1E1E2B;
+      --accent:#E8796A;
+      --accent-soft:#3A2420;
+      --gold:#E0B868;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#F2F1EC;
+    --ink-soft:#B8B6AE;
+    --rule:#33333F;
+    --paper:#15151F;
+    --paper-raised:#1E1E2B;
+    --accent:#E8796A;
+    --accent-soft:#3A2420;
+    --gold:#E0B868;
+  }
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+    line-height:1.6;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:48px 20px 80px;
+  }
+  header.hero{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding-bottom:28px;
+    margin-bottom:36px;
+    border-bottom:2px solid var(--rule);
+  }
+  .mark{
+    width:56px;height:56px;flex:none;
+    border-radius:12px;
+    background:#1A1A2E;
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+  }
+  .mark img{width:38px;height:38px;object-fit:contain}
+  header.hero h1{
+    font-family:"Fraunces", "Source Serif 4", Georgia, serif;
+    font-weight:700;
+    font-size:1.7rem;
+    margin:0 0 4px;
+    letter-spacing:-0.01em;
+  }
+  header.hero p{
+    margin:0;
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:0.85rem;
+    color:var(--ink-soft);
+  }
+  .meta{
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:36px;
+  }
+  .meta strong{color:var(--ink);font-weight:600}
+
+  .summary{
+    background:var(--paper-raised);
+    border:1px solid var(--rule);
+    border-left:4px solid var(--gold);
+    border-radius:10px;
+    padding:20px 22px;
+    margin-bottom:40px;
+    font-family:"Inter", system-ui, sans-serif;
+  }
+  .summary p{margin:0 0 10px;font-size:0.92rem;color:var(--ink-soft)}
+  .summary p:last-child{margin-bottom:0}
+  .summary strong{color:var(--ink)}
+
+  h2{
+    font-family:"Fraunces", "Source Serif 4", Georgia, serif;
+    font-size:1.25rem;
+    font-weight:600;
+    margin:40px 0 14px;
+    padding-top:4px;
+  }
+  h2 .no{
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:0.75rem;
+    font-weight:600;
+    color:var(--gold);
+    letter-spacing:0.08em;
+    display:block;
+    margin-bottom:4px;
+  }
+  p{margin:0 0 14px;font-size:1rem}
+  ul{margin:0 0 14px;padding-left:1.3em}
+  li{margin-bottom:8px}
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:18px 0 22px;
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:0.85rem;
+  }
+  th,td{
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--rule);
+    vertical-align:top;
+  }
+  th{
+    color:var(--ink-soft);
+    font-weight:600;
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+  }
+  td.field{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:0.8rem;color:var(--accent);white-space:nowrap}
+
+  .pill{
+    display:inline-block;
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:0.72rem;
+    font-weight:600;
+    padding:2px 9px;
+    border-radius:99px;
+    background:var(--accent-soft);
+    color:var(--accent);
+  }
+
+  .contact{
+    margin-top:48px;
+    padding:22px;
+    background:var(--paper-raised);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:0.9rem;
+  }
+  .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+  .contact a:hover{text-decoration:underline}
+
+  footer{
+    margin-top:48px;
+    padding-top:20px;
+    border-top:1px solid var(--rule);
+    font-family:"Inter", system-ui, sans-serif;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+  }
+
+  @media (max-width:480px){
+    table, thead, tbody, th, td, tr{display:block}
+    thead{display:none}
+    td{border:none;padding:4px 0}
+    tr{padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--rule)}
+    td.field{color:var(--accent);font-weight:600}
+  }
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap">
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="mark">
+      <img src="kasuku-logo.png" alt="Logo Kasuku">
+    </div>
+    <div>
+      <h1>Politique de confidentialité — Kasuku</h1>
+      <p>Calendrier culturel africain · application mobile</p>
+    </div>
+  </header>
+
+  <div class="meta">
+    <span>En vigueur depuis le <strong>3 octobre 2026</strong></span>
+    <span>Éditeur : <strong>Afrikia</strong></span>
+    <span>Paquet : <strong>org.afrikia.kasuku</strong></span>
+  </div>
+
+  <div class="summary">
+    <p><strong>En résumé&nbsp;:</strong> Kasuku ne contient aucun outil de suivi publicitaire ou analytique tiers. Les seules données personnelles collectées servent à faire fonctionner votre compte (connexion, préférences, favoris) et, si vous l'activez, à vous envoyer des notifications. Rien n'est vendu ni partagé à des fins publicitaires.</p>
+    <p>Vous pouvez utiliser l'application sans créer de compte pour consulter le calendrier culturel ; un compte est nécessaire pour enregistrer des favoris ou recevoir des notifications personnalisées.</p>
+  </div>
+
+  <h2><span class="no">1</span>Qui sommes-nous</h2>
+  <p>Kasuku est une application éditée par Afrikia, qui propose un calendrier culturel africain (événements, modules éducatifs, patrimoine, lignes du temps). Cette politique décrit les données traitées par l'application mobile Kasuku et son service associé.</p>
+
+  <h2><span class="no">2</span>Données que nous collectons</h2>
+  <p>Si vous créez un compte, nous enregistrons&nbsp;:</p>
+  <table>
+    <thead><tr><th>Donnée</th><th>Champ technique</th><th>Pourquoi</th></tr></thead>
+    <tbody>
+      <tr><td>Adresse e-mail</td><td class="field">email</td><td>Identifiant de connexion, vérification du compte</td></tr>
+      <tr><td>Mot de passe</td><td class="field">password_hash</td><td>Authentification — stocké uniquement sous forme de hachage <strong>Argon2id</strong>, jamais en clair, jamais transmis par l'API</td></tr>
+      <tr><td>Nom</td><td class="field">name</td><td>Affichage du profil</td></tr>
+      <tr><td>Photo de profil (facultatif)</td><td class="field">avatar_url</td><td>Affichage du profil, si vous en renseignez une</td></tr>
+      <tr><td>Pays (facultatif)</td><td class="field">country</td><td>Préférence d'affichage et filtrage des contenus culturels</td></tr>
+      <tr><td>Préférences</td><td class="field">preferences</td><td>Réglages de l'application (ex. langue, affichage) que vous choisissez</td></tr>
+      <tr><td>Statut de vérification de l'e-mail</td><td class="field">email_verified</td><td>Sécurité du compte</td></tr>
+      <tr><td>Dernière connexion</td><td class="field">last_seen_at</td><td>Maintenance et sécurité du compte</td></tr>
+      <tr><td>Favoris</td><td class="field">user_favorites</td><td>Événements, modules et récits que vous marquez comme favoris</td></tr>
+    </tbody>
+  </table>
+
+  <p>Si vous activez les notifications, nous enregistrons un jeton technique d'appareil&nbsp;:</p>
+  <table>
+    <thead><tr><th>Donnée</th><th>Champ technique</th><th>Pourquoi</th></tr></thead>
+    <tbody>
+      <tr><td>Jeton de notification push</td><td class="field">push_tokens.token</td><td>Vous envoyer des notifications (ex. rappels d'événements)</td></tr>
+      <tr><td>Plateforme</td><td class="field">platform</td><td>Distinguer Android / iOS pour le routage des notifications</td></tr>
+      <tr><td>Identifiant d'appareil (facultatif)</td><td class="field">device_id</td><td>Éviter les doublons de notification sur un même appareil</td></tr>
+    </tbody>
+  </table>
+
+  <p><span class="pill">Aucun SDK tiers</span> Kasuku n'intègre aucun outil d'analyse d'audience, de publicité ou de suivi publicitaire tiers (type Google Analytics, Facebook SDK, Meta Pixel, etc.). Les notifications push transitent par le service de notification standard de la plateforme (Firebase Cloud Messaging), nécessaire au fonctionnement technique des notifications Android.</p>
+
+  <h2><span class="no">3</span>Ce que nous ne collectons pas</h2>
+  <ul>
+    <li>Pas de géolocalisation précise</li>
+    <li>Pas d'accès au carnet de contacts, aux photos ou aux fichiers de l'appareil</li>
+    <li>Pas d'identifiants publicitaires</li>
+    <li>Pas de données de paiement (l'application est gratuite)</li>
+  </ul>
+
+  <h2><span class="no">4</span>Comment nous utilisons ces données</h2>
+  <ul>
+    <li>Créer et sécuriser votre compte</li>
+    <li>Afficher votre profil et vos favoris</li>
+    <li>Personnaliser l'affichage du calendrier culturel selon vos préférences</li>
+    <li>Vous envoyer des notifications, si vous les avez activées</li>
+    <li>Assurer la sécurité du service (détection d'abus, maintenance)</li>
+  </ul>
+
+  <h2><span class="no">5</span>Partage des données</h2>
+  <p>Nous ne vendons et ne louons aucune donnée personnelle. Vos données ne sont partagées qu'avec&nbsp;:</p>
+  <ul>
+    <li>Notre hébergeur, qui stocke la base de données du service ;</li>
+    <li>Le service de notification push de la plateforme (Firebase Cloud Messaging), uniquement si vous activez les notifications ;</li>
+    <li>Les autorités compétentes, si la loi nous y oblige.</li>
+  </ul>
+
+  <h2><span class="no">6</span>Conservation et suppression</h2>
+  <p>Vos données de compte sont conservées tant que votre compte est actif. Vous pouvez demander la suppression de votre compte et des données associées à tout moment en nous écrivant à l'adresse ci-dessous&nbsp;; la suppression est définitive et entraîne l'effacement de votre profil, de vos favoris et de vos jetons de notification.</p>
+
+  <h2><span class="no">7</span>Sécurité</h2>
+  <p>Les mots de passe sont hachés avec Argon2id avant stockage. Les échanges entre l'application et le service passent par une connexion chiffrée (HTTPS). L'accès à la base de données est restreint à l'équipe technique du service.</p>
+
+  <h2><span class="no">8</span>Public concerné</h2>
+  <p>Kasuku ne cible pas spécifiquement les enfants de moins de 13 ans et ne demande pas de données au-delà de ce qui est décrit ci-dessus.</p>
+
+  <h2><span class="no">9</span>Vos droits</h2>
+  <p>Vous pouvez à tout moment demander l'accès, la correction ou la suppression de vos données personnelles en nous contactant à l'adresse ci-dessous.</p>
+
+  <h2><span class="no">10</span>Modifications de cette politique</h2>
+  <p>Cette politique peut être mise à jour pour refléter des évolutions de l'application. La date de mise à jour figure en haut de cette page.</p>
+
+  <div class="contact">
+    <strong>Contact</strong><br>
+    Pour toute question sur cette politique ou pour exercer vos droits&nbsp;: <a href="mailto:bulakali.paulin@gmail.com">bulakali.paulin@gmail.com</a>
+  </div>
+
+  <footer>
+    Kasuku — org.afrikia.kasuku
+  </footer>
+
+</div>
